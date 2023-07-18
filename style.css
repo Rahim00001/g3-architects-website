@@ -117,13 +117,14 @@ nav ul a {
 /* features section */
 .features-container {
   display: flex;
-  align-items: center;
+  gap: 50px;
   justify-content: center;
-  padding: 100px 200px;
+  padding: 100px 180px;
 }
 .features-container .heading {
   border-left: 5px solid #ff900e;
   padding-left: 10px;
+  margin-top: 20px;
 }
 .box {
   border-radius: 8px;
@@ -131,6 +132,7 @@ nav ul a {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
   padding: 20px;
   margin-right: 15px;
+  margin-top: 10px;
 }
 .box-title {
   font-size: 1.4rem;
@@ -138,17 +140,41 @@ nav ul a {
 }
 .feature-img {
   max-width: 600px;
-  max-height: 940px;
+  height: 980px;
   border-radius: 8px;
 }
-/* features sectionend */
+.ten-year {
+  width: 200px;
+  height: 120px;
+  padding: 40px;
+  margin-top: -80px;
+  margin-left: -40px;
+  position: absolute;
+  color: #fff;
+  border: none;
+  background-color: #ff900e;
+  border-radius: 10px;
+  text-align: center;
+}
+.ten-year > h1 {
+  font-size: 3.4rem;
+  font-weight: 700px;
+}
+.ten-year > p {
+  font-size: 1.5rem;
+  font-weight: 500px;
+  line-height: 35px;
+}
+/* features section end */
 
 /* responsive styles for mobile*/
 @media screen and (max-width: 576px) {
-  header {
+  header,
+  .features-container {
     padding: 20px;
   }
-  nav {
+  nav,
+  .features-container {
     flex-direction: column;
   }
   .teams-container {
@@ -161,14 +187,24 @@ nav ul a {
   .teams-desc {
     text-align: center;
   }
+  .feature-img {
+    width: 100%;
+    height: 100%;
+  }
+  .ten-year {
+    margin-left: 55px;
+    padding: 30px;
+  }
 }
 
 /*  responsive styles for tablet*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  header {
+  header,
+  .features-container {
     padding: 50px;
   }
-  nav {
+  nav,
+  .features-container {
     flex-direction: column;
   }
   .teams-container {
@@ -177,5 +213,8 @@ nav ul a {
   }
   .teams-desc {
     text-align: center;
+  }
+  .ten-year {
+    margin-left: 180px;
   }
 }
